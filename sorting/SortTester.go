@@ -26,7 +26,7 @@ func TestHeapSorting() {
 	intList := getSliceFromFile()
 	fmt.Println(intList)
 	pq := NewPriorityQueueFromArray(intList)
-	sortedArray := HeapSort(pq)
+	sortedArray := pq.HeapSort()
 	fmt.Println("Sorted Array: ")
 	fmt.Println(sortedArray)
 }
